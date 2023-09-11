@@ -39,10 +39,10 @@ var images = [];
 var time = 2500; // the time it takes to change//
 
 //image list//
-images[0] = `images/img-1-.png`;
-images[1] = `images/img-2-.png`;
-images[2] = `images/img-3-.png`;
-images[3] = `images/img.last.png`;
+images[0] = `/img-1-.png`;
+images[1] = `/img-2-.png`;
+images[2] = `/img-3-.png`;
+images[3] = `/img.last.png`;
 
 //function to change the images//
 function changeImg() {
