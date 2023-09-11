@@ -1,0 +1,370 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #111222;
+  position: sticky;
+  color: #fff;
+}
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+ul li a:hover {
+  border-bottom: 2px solid #ff0000;
+  color: #fc6f6f;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  nav {
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+}
+
+.hero {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.842),
+      rgba(0, 0, 12, 0.973)
+    ),
+    url("images/istockphoto-1396728049-170667a.webp");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 100px;
+  color: #fff;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: end;
+  text-align: center;
+}
+.content h2 {
+  color: #3a3d6e;
+}
+.content h1 {
+  font-size: 70px;
+  letter-spacing: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.content .btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.content .btn button {
+  margin-left: 20px;
+  padding: 10px 40px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+}
+.regi {
+  background-color: transparent;
+  background-color: #ff0000;
+}
+.regi:hover {
+  background-color: #e48787;
+}
+.log {
+  background-color: transparent;
+  border: none;
+}
+.log:hover {
+  background-color: transparent;
+  background-color: #e48787;
+}
+@media only screen and (max-width: 1000px) {
+  .nav ul {
+    visibility: hidden;
+  }
+  .hero {
+    height: 60vh;
+  }
+  .content {
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .hero h2 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+  .hero h2 {
+    font-size: 10px;
+  }
+}
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-txt h1 {
+  font-size: 60px;
+  font-family: "EB Garamond", serif;
+}
+.service-txt button {
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 30px;
+  border: 5px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.service-images img {
+  width: 800px;
+  height: 800px;
+  object-fit: contain;
+}
+.divi {
+  text-align: center;
+  font-size: 60px;
+  font-family: "EB Garamond", serif;
+}
+@media only screen and (max-width: 1000px) {
+  .service {
+    display: block;
+    text-align: center;
+  }
+  .service-txt h1 {
+    font-size: 30px;
+  }
+  .service-txt h2 {
+    margin-bottom: 20px;
+  }
+  .service-images img {
+    width: 500px;
+    height: 400px;
+  }
+  .divi {
+    font-size: 30px;
+    margin: 50px 0;
+  }
+}
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  align-items: center;
+  background-color: #111222;
+  padding: 50px 0;
+  color: #fff;
+}
+.contact hr {
+  padding: 200px 2px;
+}
+.contact-image {
+  margin-right: 100px;
+}
+.contact-image img {
+  width: 900px;
+}
+.contact-txt h2 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 20px;
+}
+.contact-txt p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.contact-txt h3 {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "EB Garamond", serif;
+}
+.contact-txt img {
+  width: 200px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .contact {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-image img {
+    width: 90vw;
+    margin-left: 30px;
+  }
+  .contact hr {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact-txt h2 {
+    font-size: 20px;
+  }
+  .contact-txt p {
+    font-size: 10px;
+  }
+}
+.equiped {
+  margin-top: 70px;
+}
+.equiped h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 60px;
+}
+.images {
+  display: grid;
+  justify-content: center;
+  margin-left: 40px;
+  grid-template-columns: repeat(2, 0.2fr);
+  gap: 10px;
+}
+.images img {
+  width: 700px;
+}
+@media only screen and (max-width: 1000px) {
+  .images img {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .images img {
+    width: 150px;
+  }
+}
+.about {
+  margin-top: 100px;
+  align-items: center;
+  background-color: #111222;
+  padding: 50px 0;
+  color: #fff;
+}
+.about h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #ff0000;
+}
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.about-content h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+.about-content h3 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-style: italic;
+}
+.about-content p {
+  font-size: 25px;
+}
+.about hr {
+  padding: 200px 1px;
+  margin: 20px;
+}
+
+.register h2 {
+  font-size: 50px;
+}
+.register input {
+  padding: 15px 50px;
+  display: block;
+  margin-bottom: 40px;
+  background-color: #45476e79;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.register label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.register button {
+  background-color: #ff0000;
+  padding: 15px 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+}
+@media only screen and (max-width: 1000px) {
+  .about-content {
+    display: block;
+    text-align: center;
+  }
+  .about-content hr {
+    display: none;
+  }
+  .about h1 {
+    font-size: 25px;
+  }
+  .about-content h2 {
+    font-size: 40px;
+  }
+  .about-content h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .about-content p {
+    font-size: 15px;
+  }
+  .register h2 {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+  form input {
+    margin: 10px auto;
+    align-items: center;
+  }
+}
